@@ -33,6 +33,7 @@ var dungeon_easy = {
     damage_male_orc: 10,
     damage_dist_orc: 0,
     damage_traps: 20, /* this will go agaist the ability of your rogue*/
+    gold: 150,
    }
 var dungeon_life= dungeon_easy[0]*dungeon_easy[1]
 var dungeon_damage_male= dungeon_easy[0]*dungeon_easy[2],
@@ -44,7 +45,7 @@ if (rogue[0]>=1 || warrior[0]>=1||mage[0]>=1){
    
  var check_of_survival_team= (damage_dist_team+damage_male_team)-dungeon_life,
     if (check_of_survival_team<0) {
-        console.log("you kill the bastard!")
+        console.log("you kill the bastard! and you earn"+dungeon_easy[5])
     }else if (check_of_survival_team>0){
        var dead_check= dungeon_damage_dist+dungeon_damage_male+(dungeon_damage_trap-(dungeon_damage_trap*rogue[4]))-team_life
     }else if (dead_check<0){
