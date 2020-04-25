@@ -31,15 +31,15 @@ body {
 }
 
 .box{
-  background-size: cover;
-  background-image: url('Images/boxtest.png');
-  padding: 4em 4em 4em 4em;
-  margin: 20px;
+  
+  padding: 1em 1em 1em 1em;
+  margin: 2px;
   justify-content: space-around;
   flex-grow: 5;
-  text-align: center;
+  text-align: left;
   border: 3px black;
   border-style: solid
+
 }
 
 

@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
  
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    
-    <title>Ceramic Works</title>
+	  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <!-- javascript code for counting clicks -->>
+   
+    <title>ΦTavernatorΨ</title>
     
 </head>
 <body>
@@ -37,11 +39,40 @@
 </div>
 <!--navbar-->  
 <!--Boxes for controls-->  
+
 <div class="container">
   
     <div class="box">
-      <h1>I am a box</h1>
+      <h2>Tables:</h2><button type="button" onClick="sum()">Add Table</button>
+      <p>Table: <a id="clicks">0</a></p>
+      <hr>
+      <hr>
+      
+      <hr>
+       <span> <p class="tables_class">Slaves class Tables    <button  id="sum_slave_table" type="button"   class="btn btn-dark" onclick="add()">+</button>
+                               <button id="rest_slave_table" type="button" class="btn btn-dark" onclick="rest()">-</button>  </p> <a id="slave_table">0</a></p> </span>
+      <hr>
+      <hr>
+      <span> <p class="tables_class">Peasants class Tables    <button  id="sum_peasant_table" type="button"   class="btn btn-dark" onclick="add_p()">+</button>
+                              <button id="rest_peasant_table" type="button" class="btn btn-dark" onclick="rest_p()">-</button>  </p> <a id="peasant_table">0</a></p> </span>
+      <hr>
+
+      <span> <p class="tables_class">Noble class Tables    <button  id="sum_noble_table" type="button"   class="btn btn-dark" onclick="add_n()">+</button>
+        <button id="rest_noble_table" type="button" class="btn btn-dark" onclick="rest_n()">-</button>  </p> <a id="noble_table">0</a></p> </span>
+      <hr>
+
+      <span> <p class="tables_class">Feudal class Tables    <button  id="sum_feudal_table" type="button"   class="btn btn-dark" onclick="add_f()">+</button>
+        <button id="rest_feudal_table" type="button" class="btn btn-dark" onclick="rest_f()">-</button>  </p> <a id="feudal_table">0</a></p> </span>
+      <hr>
+
+    
+
+      <hr>
+       <span><p>Beer sold per hour</p> <input type=range min=10 max=30 value=10 step=1>  </span>
+    
     </div>
+    
+
   
   
   <div class="box">
@@ -59,6 +90,6 @@
 <!--fotter-->
     
 
-
+<script src="click.js"></script>
 </body>
 </html>
