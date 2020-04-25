@@ -24,7 +24,7 @@ var feudal_table = null;
        return total_distro -= 1, slave_table;
     };
     function rest(){
-            if (slave_table !=0) {
+            if (slave_table > 0) {
                 slave_table -= 1;
             document.getElementById("slave_table").innerHTML = slave_table;
                 
@@ -44,7 +44,7 @@ var feudal_table = null;
        return total_distro -= 1, peasant_table;
 };
     function rest_p(){
-        if (peasant_table !=0) {
+        if (peasant_table > 0) {
             peasant_table -= 1;
             document.getElementById("peasant_table").innerHTML = peasant_table;
             
@@ -63,7 +63,7 @@ var feudal_table = null;
        return total_distro -= 1, noble_table;
 };
     function rest_n(){
-        if (noble_table !=0) {
+        if (noble_table > 0) {
             noble_table -= 1;
             document.getElementById("noble_table").innerHTML = noble_table;
             
@@ -87,7 +87,7 @@ var feudal_table = null;
    return total_distro -= 1, feudal_table;
 };
     function rest_f(){
-          if (feudal_table !=0 ) {
+          if (feudal_table > 0 ) {
               feudal_table -= 1;
               document.getElementById("feudal_table").innerHTML = feudal_table;
         
